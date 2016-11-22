@@ -1,4 +1,7 @@
 function NET = create_nn(imSize)
+%%%
+%%% imSize = [row#, col#]
+%%%
 
 % Create the net
 NET.layers = {};

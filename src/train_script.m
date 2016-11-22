@@ -1,10 +1,11 @@
 %%% Training script
+%%% This is the "manager" of the project
 
 %% Load in the images
 imdb.images = create_data('C:\Users\Joshua\Documents\MATLAB\Projects\Jutsu_Classifier\Images');
 
 % Normalize images and save the normalized mean in a variable
-if ~exist('rgbMean.mat')
+if ~exist('rgbMean.mat', 'file')
     NormalizeRGB(imdb.images.data);
 end
 imdb.meta.mean = load('rgbMean.mat');
